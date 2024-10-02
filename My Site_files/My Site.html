@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+        <style>
+          img {
+            border-radius:0%;
+          }
+          section {
+            border-width: 1px;
+            border-color: gray;
+            border-style: solid;
+            border-radius: 8px;
+            padding:30px;
+            margin-bottom: 8px;
+            background-image: url(background.png);
+          }
+          body {
+            text-align: center;
+          }
+        </style>
+    <link rel="stylesheet" href="./My Site_files/style.css">
+        <title>Tùy chỉnh giao diện HTML bằng CSS</title>
+        
+        <style type="text/css">
+            p{
+                background: blue;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+            }
+        </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <ul>
+        <li>item one</li>
+        <li>item one</li>
+        <li>item 2</li> 
+        <li>item 3</li>
+    </ul>
+    <img src="./My Site_files/Hinh-anh-meo-ngau-nhat.jpg" alt="neko">
+    <script src="./My Site_files/main.js.ダウンロード"></script>
+    <table>
+        <thead>
+            <tr><th>year</th><th>job</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2011</td>
+                <td>desier</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td><a href="https://256times.com/"> 256times</a></td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
